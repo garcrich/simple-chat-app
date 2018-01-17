@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import InputList from './Components/OutputList/OutputList'
 
 class ChatWindow extends Component {
 
@@ -13,11 +14,7 @@ class ChatWindow extends Component {
     return (
       <div>
         <h3>Stukent Chat App</h3>
-        <ul>
-          {this.state.items.map(item => (
-            <li key={item.id}>{item.text}</li>
-          ))}
-        </ul>
+        <InputList items={this.state.items}/>
         <form onSubmit={this.handleSubmit}>
           <input onChange={this.handleChange} value={this.state.text} />
           <button>{'Send'}</button>
