@@ -20,10 +20,10 @@ class ChatWindow extends Component {
 
   startTime() {
     var today = new Date(),
-      h = today.getHours() === 0 ? 12 : this.checkTime(today.getHours() % 12),
+      h = today.getHours() % 12 === 0 ? 12 : this.checkTime(today.getHours() % 12),
       m = this.checkTime(today.getMinutes()),
       s = this.checkTime(today.getSeconds()),
-      DayChecker = this.PM_AM_Checker(Math.floor(today.getHours()));
+      DayChecker = this.PM_AM_Checker(today.getHours());
 
     return `${h}:${m}:${s} ${DayChecker}`
   }
