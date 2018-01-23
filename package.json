@@ -5,7 +5,8 @@
   "dependencies": {
     "moment": "^2.20.1",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-emoji-selector": "^1.0.4"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"
