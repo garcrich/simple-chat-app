@@ -1,12 +1,14 @@
 import React from 'react';
+import ListItem from './ListItem';
 
 const InputList = (props) => {
     return (
         <ul>
             {props.items.map(item => (
-                <li key={item.id}><code>{item.timeStamp}:</code> "{item.text}"</li>
+                <ListItem key={item.id} item={item}/>
             ))}
         </ul>
     )
 }
+
 export default InputList
