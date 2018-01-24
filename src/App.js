@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import './styles/App.css';
+import Video from './Components/Video/Video';
+import Hero from './Components/Hero/Hero';
 import ChatWindow from './ChatWindow';
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-        </div>
+          <Video/>
+          <Hero/>
           <ChatWindow />
       </div>
-    );
+        );
   }
 }
 

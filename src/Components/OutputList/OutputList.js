@@ -1,14 +1,15 @@
 import React from 'react';
 import ListItem from './ListItem';
 
-const InputList = (props) => {
+const OutputList = (props) => {
     return (
-        <ul>
+        <ul className="post-list">
             {props.items.map(item => (
-                <ListItem key={item.id} item={item}/>
+                <ListItem key={item.id} item={item}>
+                </ListItem>
             ))}
         </ul>
     )
 }
 
-export default InputList
+export default OutputList;
