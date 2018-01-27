@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../imgs/Stukent_Signature_BlueBlue.png';
+import logo from '../../imgs/Watermark.png';
 
 const Hero = () => {
     return (
